@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+</head>
+<body ng-app="app" ng-controller="AuthController as vm">
+    <div class="auth-container">
+        <h1>Login</h1>
+        <form ng-submit="vm.login()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" ng-model="vm.credentials.email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" ng-model="vm.credentials.password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>{{ vm.message }}</p>
+    </div>
+</body>
+</html>

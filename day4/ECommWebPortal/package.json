@@ -1,0 +1,19 @@
+{
+  "name": "ecommwebportal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Laxmi Patil",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/angular": "^1.8.9",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@angular/core": "^19.1.6",
+    "angular": "^1.8.3"
+  }
+}

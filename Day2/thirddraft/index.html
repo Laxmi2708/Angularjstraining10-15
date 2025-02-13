@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Portal</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    
+</head>
+<body ng-app="transflower" ng-controller="loginContoller">
+    <h1>TFS</h1>
+    <div>
+        <form ng-submit="onValidate()">
+            <table>
+               
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email"id="email" ng-model="user.email"required/>
+                </td>
+            </br>
+        </br>
+        <td>
+        <label for="password">Password:</label>
+    </td>
+    <td>
+                <input type="password" name="password"id="password" ng-model="user.password" required/>
+            </td>
+    </br>
+</br></br>
+</br>
+                <td>
+                    <button id="btnLogin">Login</button>
+                </td>
+
+               
+            </table>
+            
+        </form>
+    </div>
+</body>
+</html>

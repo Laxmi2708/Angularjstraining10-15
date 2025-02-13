@@ -1,0 +1,15 @@
+
+<div ng-controller="ProductController">
+    <h2>Product List</h2>
+
+    <div ng-repeat="product in products" class="product">
+        
+        <img ng-src="{{ product.image }}" alt="{{ product.name }}" class="product-image">
+        
+        <h3>{{ product.name }}</h3>
+        
+        <p><strong>Price:</strong> {{ product.price }}</p>
+        
+        <p><strong>Features:</strong> {{ product.features }}</p>
+    </div>
+</div>

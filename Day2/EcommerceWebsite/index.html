@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tfl Store</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+       
+        <script src="./modules/auth.module.js"></script>
+       
+        <script src="./controllers/logincontroller.js"></script>
+        <script src="./services/login.service.js"></script>
+        
+    </head>
+<body ng-app="authmodule" ng-controller="LoginController">
+    
+    <nav style="position: absolute; top: 0; left: 0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            
+        </ul>
+    </nav>
+    <div>
+    <div class="container">
+        <form name="loginForm" ng-submit="onValidate()"> 
+        <table>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" id="emailid" name="email" ng-model="user.emailid" required/></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" id="password" ng-model="user.password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="validation-message" class="validation-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" id="btnlogin">Login</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

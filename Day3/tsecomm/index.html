@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Login Page</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div id="app-container">
+        <div ng-controller="loginController">
+            <h1>Login</h1>
+            
+            <form name="loginForm" ng-submit="login()" novalidate>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" ng-model="username" name="username" required />
+                    <span ng-show="loginForm.username.$touched && loginForm.username.$invalid">Username is required.</span>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" ng-model="password" name="password" required />
+                    <span ng-show="loginForm.password.$touched && loginForm.password.$invalid">Password is required.</span>
+                </div>
+
+                <button type="submit" ng-disabled="loginForm.$invalid">Login</button>
+            </form>
+
+            <div ng-show="loginSuccess !== null">
+                <p ng-show="loginSuccess">Login successful!</p>
+                <p ng-show="!loginSuccess">Invalid username or password.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.controller('loginController', function($scope) {
+            $scope.username = "";
+            $scope.password = "";
+            $scope.loginSuccess = null; 
+            $scope.login = function() {
+               
+                var validUsername = "admin";
+                var validPassword = "password123";
+
+                if ($scope.username === validUsername && $scope.password === validPassword) {
+                    $scope.loginSuccess = true;
+                } else {
+                    $scope.loginSuccess = false;
+                }
+            };
+        });
+    </script>
+</body>
+</html>
