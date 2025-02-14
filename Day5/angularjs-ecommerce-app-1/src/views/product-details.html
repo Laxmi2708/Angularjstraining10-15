@@ -1,0 +1,14 @@
+<div>
+    <h1>Product Details</h1>
+    <div ng-controller="ProductController as vm">
+        <div ng-if="vm.product">
+            <h2>{{ vm.product.name }}</h2>
+            <p><strong>Price:</strong> {{ vm.product.price | currency }}</p>
+            <p><strong>Description:</strong> {{ vm.product.description }}</p>
+            <button ng-click="vm.addToCart(vm.product)">Add to Cart</button>
+        </div>
+        <div ng-if="!vm.product">
+            <p>Loading product details...</p>
+        </div>
+    </div>
+</div>

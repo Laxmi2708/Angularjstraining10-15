@@ -1,0 +1,19 @@
+{
+  "name": "angularjs-ecommerce-app",
+  "version": "1.0.0",
+  "description": "An AngularJS eCommerce application built with TypeScript.",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "angular": "^1.8.2"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.8.2",
+    "typescript": "^4.5.4",
+    "lite-server": "^2.6.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+<div>
+    <h1>Welcome to Our E-Commerce Store</h1>
+    <h2>Available Products</h2>
+    <div ng-controller="ProductController as productCtrl">
+        <div ng-repeat="product in productCtrl.products" class="product-item">
+            <h3>{{ product.name }}</h3>
+            <p>Price: ${{ product.price }}</p>
+            <button ng-click="productCtrl.selectProduct(product)">View Details</button>
+        </div>
+    </div>
+</div>
+<style>
+    .product-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+    }
+</style>
