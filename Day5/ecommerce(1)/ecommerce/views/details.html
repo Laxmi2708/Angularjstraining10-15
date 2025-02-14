@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../styles/details.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .auth-buttons a {
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .auth-buttons a:hover {
+            background-color: #0056b3;
+        }
+        .btn {
+            color: #fff;
+            background-color: #28a745;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .product-details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top-right Sign In and Sign Up Buttons -->
+    <div class="auth-buttons">
+        <a href="#!/auth" class="auth-btn">Sign In</a>
+        <a href="#!/auth" class="auth-btn">Sign Up</a>
+    </div>
+
+    <!-- Back Button using JavaScript -->
+    <a href="#!/catalog" class="btn back-btn">Back to Previous Page</a>
+
+    <h1>Product Details</h1>
+
+    <div class="product-details">
+        <!-- Product Image -->
+        <img src="../images/clothing-item.jpg" alt="Product Image">
+
+        <!-- Product Title and Description -->
+        <h2>Men's Casual Shirt</h2>
+        <p>A stylish and comfortable casual shirt perfect for everyday wear.</p>
+        
+        <!-- Detailed Specifications (example) -->
+        <ul>
+            <li><strong>Material:</strong> Cotton</li>
+            <li><strong>Size:</strong> M, L, XL</li>
+            <li><strong>Color:</strong> Blue</li>
+            <li><strong>Brand:</strong> FashionCo</li>
+        </ul>
+
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+</body>
+</html>
