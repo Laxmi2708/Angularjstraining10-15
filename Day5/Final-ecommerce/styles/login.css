@@ -1,0 +1,46 @@
+
+.auth{
+    margin-top: 10%;
+    margin-bottom: 17%;
+    margin-left: 40%;
+}
+.login-container {
+    background-color: rgb(129, 210, 228);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(21, 1, 1, 0.1);
+    width: 300px;
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.login-container input[type="text"], .login-container input[type="password"] {
+    width: 92%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.login-container input[type="submit"] {
+    width: 92%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.login-container p {
+    text-align: center;
+}
+body {
+    background-image: url('https://www.itsystemonline.it/wp-content/uploads/2017/04/e-commerce-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
